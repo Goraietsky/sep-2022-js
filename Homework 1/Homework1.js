@@ -22,26 +22,25 @@ console.log(n3)
 let n4 = 123;
 console.log(n4);
 
-let n5 =3.14;
+let n5 = 3.14;
 console.log(n5)
 
-let n6 =2.7;
+let n6 = 2.7;
 console.log(n6)
 
-let n7 =16;
+let n7 = 16;
 console.log(n7)
 
-let t =100==100;
+let t = 100 == 100;
 console.log(t)
 
 let f = 100 > 400;
 console.log(f);
 
-let firstName = 'Horaietsky Yura Stepanovich';
-let middleName = 'Horaietsky Yura Stepanovich';
-let lastName = 'Horaietsky Yura Stepanovich';
+let firstName = 'Horaietsky ';
+let middleName = ' Yura ';
+let lastName = 'Stepanovich';
 
-let person =''
 console.log(`${firstName} ${middleName} ${lastName}`);
 
 let a = 100;
@@ -51,4 +50,15 @@ let b = '100';
 console.log(typeof b);
 
 let c = true;
-console.log(typeof c)
+console.log(typeof c);
+
+let name = prompt("Your Name");
+console.log(name)
+let surname = prompt("Your Surname");
+console.log(surname)
+let age = prompt("Your date of birth");
+console.log(age)
+
+
+
+
