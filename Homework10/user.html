@@ -8,20 +8,20 @@
 <script>
 
     let url = new URL(location.href);
-let id = url.searchParams.get("id");
+    let id = url.searchParams.get("id");
 
     fetch('https://jsonplaceholder.typicode.com/users/'+id)
-    .then(value => value.json())
-    .then(user => {
-        // let {user:userData}=value
-        let div = document.createElement('div');
-        let h2 = document.createElement('h2');
-        h2.innerText=`${user.id} ${user.name} ${user.username} ${user.email} ${user.address.street} ${user.address.suite}
+        .then(value => value.json())
+        .then(user => {
+            // let {user:userData}=value
+            let div = document.createElement('div');
+            let h2 = document.createElement('h2');
+            h2.innerText=`${user.id} ${user.name} ${user.username} ${user.email} ${user.address.street} ${user.address.suite}
         ${user.address.city} ${user.address.zipcode} ${user.address.geo.lat} ${user.address.geo.lng} ${user.phone}
         ${user.website} ${user.company.name} ${user.company.catchPhrase} ${user.company.bs}`
-        div.appendChild(h2);
-        document.body.appendChild(div)
-    })
+            div.appendChild(h2);
+            document.body.appendChild(div)
+        })
 
 </script>
 </body>
